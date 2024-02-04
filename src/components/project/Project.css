@@ -1,0 +1,116 @@
+#project{
+    position: relative;
+}
+.project__container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+
+.head{
+    color: black;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.head::after{
+  content:"";
+  margin-left: 44.7rem;
+  border-radius: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 105px;
+  height: 4px;
+  background-color: #000;
+  transform: scaleX(0); 
+  transition: all ease 500ms;
+}
+.head:hover::after{
+  transform: scaleX(1);
+}
+
+.project_item{
+    background: transparent;
+  box-shadow: 0px 0px 5px rgba(148, 146, 146, 0.438);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border:1px solid transparent;
+    transition: all ease-in-out 500ms;
+}
+.project_item:hover {
+    transform: scale(1.03);
+    border: 1px solid #000;
+}
+
+.project__item-image:hover{
+    cursor: pointer;
+}
+
+.project__item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: center;
+}
+
+.project_item h3{
+    margin: 1.2rem 0 1.5rem;
+    font-weight: 700;
+    color: rgb(48, 48, 48);
+}
+
+.project_item-cta{
+    display: flex;
+    gap: 1rem;
+}
+
+.project_item-cta .btn{
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #a4a0a0;
+    transition: all ease 500ms;
+}
+
+.project_item-cta .btn:hover{
+    transform: scale(1.03);
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media screen and (max-width:1024px){
+    .project__container{
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .project_item{
+        padding: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+    .project__container{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .project_item{
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+

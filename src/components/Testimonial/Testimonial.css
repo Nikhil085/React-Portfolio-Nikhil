@@ -1,0 +1,178 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    padding: 2rem;
+}
+
+.service{
+  color: black;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.service::after{
+content:"";
+margin-left: 44.7rem;
+border-radius: 2px;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 105px;
+height: 4px;
+background-color: #000;
+transform: scaleX(0); 
+transition: all ease 500ms;
+}
+.service:hover::after{
+transform: scaleX(1);
+}
+
+
+.swiper {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+    top: -20px;
+  }
+  
+  .swiper-slide {
+    font-size: 18px;
+    /* background: #fff; */
+    text-align: center;
+    justify-items: center;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.slider-content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 19px;
+   font-weight: 600;
+   line-height: 25px;
+   color: #211d1dde;
+   transition: all ease 500ms;
+
+}
+
+
+.slider-content:hover{
+    cursor: pointer;
+}
+
+.fristimg img{
+    position: absolute;
+   width: 40px;
+   height: 30px;
+   /* background-color: red; */
+   top: 15px;
+   left: 190px;
+}
+.secondimg img{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    /* background-color: red; */
+    top: 200px;
+    left: 49rem;
+ }
+
+
+ .infi-slider{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+ }
+
+  .infi-slider>.scroller-in-1{
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroller;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.infi-slider h4{
+    display: inline-block;
+    font-size: 8rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(122, 118, 118, 0.932);
+    color: transparent;
+    margin-right: 2rem;
+    transition: all ease 500ms;
+}
+.infi-slider h4:first-child:hover{
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.03);
+ }
+
+ .infi-slider h4:nth-child(2):hover{
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.03);
+ }
+
+ .infi-slider h4:last-child:hover{
+    color: #000000;
+    cursor: pointer;
+    transform: scale(1.03);
+ }
+
+
+ @media screen and (max-width : 1024px){
+
+
+}
+
+@media screen and (max-width : 600px){
+   .slider-content{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    font-size: 12px;
+   }
+  
+  .fristimg,
+  .secondimg{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
