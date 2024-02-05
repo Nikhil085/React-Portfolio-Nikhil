@@ -41,6 +41,7 @@ nav a.active{
     font-size: 13px;
     bottom: 1rem;
     right: 0.1rem;
+    top:-37px;
     background-color: black;
     height: 1.5rem;
     width: 2.7rem;
@@ -49,7 +50,7 @@ nav a.active{
     transition: all ease-in-out 400ms;
   opacity: 0;
 }
-.tips:hover, .nav a{
+.tips:hover .nav a{
     bottom:3.5rem;
     opacity: 1;
 }
