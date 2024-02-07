@@ -38,9 +38,10 @@ nav a.active{
 
 .tips{
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     bottom: 1rem;
     right: 0.1rem;
+    left: 1px;
     top:-37px;
     background-color: black;
     height: 1.5rem;
